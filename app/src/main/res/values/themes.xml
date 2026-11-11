@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/color_default</item>
         <item name="colorPrimaryVariant">@color/color_default</item>
         <item name="android:windowBackground">@color/color_default</item>
+
     </style>
 
     <style name="Theme.Kanban" parent="Base.Theme.Kanban" />
