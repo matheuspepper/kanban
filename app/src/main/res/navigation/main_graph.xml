@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
@@ -10,7 +9,25 @@
         android:name="com.example.kanban.ui.SplashFragment"
         android:label="SplashFragment" />
 
-    <navigation android:id="@+id/authentication"
+    <navigation
+        android:id="@+id/authentication"
         app:startDestination="@id/fragment_login">
+
+        <fragment
+            android:id="@+id/fragment_login"
+            android:name="com.example.kanban.ui.auth.LoginFragment"
+            android:label="LoginFragment" />
+
+        <fragment
+            android:id="@+id/fragment_register"
+            android:name="com.example.kanban.ui.auth.RegisterFragment"
+            android:label="RegisterFragment" />
+
+        <fragment
+            android:id="@+id/fragment_recover_account"
+            android:name="com.example.kanban.ui.auth.RecoverAccountFragment"
+            android:label="RecoverAccountFragment" />
+
     </navigation>
+
 </navigation>
