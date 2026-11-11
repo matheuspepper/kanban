@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fragment_splash">
+
+    <fragment
+        android:id="@+id/fragment_splash"
+        android:name="com.example.kanban.ui.SplashFragment"
+        android:label="SplashFragment" />
+
+    <navigation android:id="@+id/authentication"
+        app:startDestination="@id/fragment_login">
+    </navigation>
+</navigation>
