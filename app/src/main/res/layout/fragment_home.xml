@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_default"
-        android:elevation="4dp">
+        android:elevation="4dp"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -27,6 +27,7 @@
                     app:tabMode="scrollable"
                     app:tabPaddingStart="24dp"
                     app:tabPaddingEnd="24dp"
+                    app:tabTextAppearance="@style/CustomTabLayout"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -44,13 +45,15 @@
                     android:padding="24dp"
                     android:src="@drawable/logoutic"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
 
-    </com.google.android.material.appbar.AppBarLayout>
-    <!--conteúdo scroll-->
+        </com.google.android.material.appbar.AppBarLayout>
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
